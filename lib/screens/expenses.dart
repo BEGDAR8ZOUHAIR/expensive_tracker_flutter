@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/chart/chart.dart';
 import 'package:flutter_application_1/models/expense.dart';
 import 'package:flutter_application_1/widgets/expenses_list/expenses_list.dart';
 import 'package:flutter_application_1/widgets/expenses_list/new_expenses.dart';
@@ -77,13 +78,13 @@ class _ExpensesState extends State<Expenses> {
       ),
       body: Column(
         children: [
-          // if no expenses shown then show this message else show the expenses list
           if (_registeredExpenses.isEmpty)
-            SizedBox(
+            const SizedBox(
               height: 200,
-              child: const Center(child: Text('No Expenses Found')),
+              child: Center(child: Text('No Expenses Found')),
             ),
-
+          if (_registeredExpenses.isNotEmpty)
+            CategoryBarChart(expenses: _registeredExpenses),
           Expanded(
             child: ExpensesList(
               expenses: _registeredExpenses,
