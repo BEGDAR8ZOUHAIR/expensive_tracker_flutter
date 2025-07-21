@@ -11,7 +11,7 @@ class ExpensesItem extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         color: Color(0xFFE2FDE2),
-        borderRadius: BorderRadius.circular(40),
+        borderRadius: BorderRadius.circular(15),
       ),
       child: SizedBox(
         height: 80,
@@ -32,7 +32,6 @@ class ExpensesItem extends StatelessWidget {
                 fontSize: 15,
                 color: Colors.black,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Quicksand',
               ),
             ),
             subtitle: Text(
@@ -41,7 +40,6 @@ class ExpensesItem extends StatelessWidget {
                 fontSize: 12,
                 color: Colors.grey[600]!,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Quicksand',
               ),
             ),
             trailing: Text(
@@ -50,7 +48,6 @@ class ExpensesItem extends StatelessWidget {
                 color: Colors.black,
                 fontSize: 13,
                 fontWeight: FontWeight.bold,
-                fontFamily: 'Quicksand',
               ),
             ),
           ),

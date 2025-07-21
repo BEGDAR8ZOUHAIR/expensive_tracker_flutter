@@ -163,7 +163,6 @@ class _NewExpensesState extends State<NewExpenses> {
                             style: const TextStyle(
                               fontSize: 15,
                               color: Colors.black,
-                              fontFamily: 'Quicksand',
                             ),
                           ),
                         ),
