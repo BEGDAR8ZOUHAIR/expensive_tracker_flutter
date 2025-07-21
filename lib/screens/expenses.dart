@@ -67,8 +67,9 @@ class _ExpensesState extends State<Expenses> {
           ),
           IconButton(
             onPressed: () {},
-            icon: const Icon(Icons.logout, color: Colors.black, size: 20),
+            icon: const Icon(Icons.dark_mode, color: Colors.black, size: 20),
             style: ButtonStyle(
+              // #FEE0D6
               backgroundColor: WidgetStatePropertyAll(Color(0xFFFEE0D6)),
             ),
           ),

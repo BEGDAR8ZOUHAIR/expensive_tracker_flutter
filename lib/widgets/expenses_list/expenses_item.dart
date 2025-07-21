@@ -23,7 +23,7 @@ class ExpensesItem extends StatelessWidget {
               child: Icon(
                 categoryIcons[expense.category],
                 color: Colors.black,
-                size: 40,
+                size: 30,
               ),
             ),
             title: Text(
